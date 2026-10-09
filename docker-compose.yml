@@ -1,0 +1,11 @@
+version: "3.8"
+
+services:
+  snabrx:
+    image: ${IMAGE_TAG}
+    container_name: snabrx-app
+    ports:
+      - "127.0.0.1:8597:3000"
+    restart: always
+    environment:
+      NODE_ENV: production
